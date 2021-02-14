@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Your Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="./js/custom.js"
+    ></script>
+  </head>
+
+  <body>
+    <header class="siteHeader">
+      <nav
+        class="navbar navbar-expand-lg navbar-light d-flex justify-content-between siteContainer border-bottom seperator"
+      >
+        <a class="navbar-brand" href="#"
+          ><img src="./img/logo.png" alt="logo" class="siteLogo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse menu" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="#"
+                >Features <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Compare</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">For Educators</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">User Manual</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Global Delight</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="videoBanner desktopBanner">
+      <div class="overlay"></div>
+
+      <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+        <source src="./Video/Web_Scaled.webm" type="video/webm" />
+        <source src="./Video/Web_Scaled.mp4" type="video/mp4" />
+        <source src="./Video/Web_Scaled.ogv type="video/ogv">
+      </video>
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="mobBannerText text-center d-lg-none text-white">
+            <h1>
+              An iphone Music Player that offers a virtual sound Experience!
+            </h1>
+            <h2>
+              Boom for iOS transforms the way you listen to your downloaded music on an iPhone or
+iPad. With incredible features like 3D Surround Sound, Handcrafted Equalizer Presets and
+Audio Intensity Slider, you are guaranteed a high quality music experience on any
+headphones!
+            </h2>
+            <div class="buttonWrap flex flex-wrap mt-5">
+              <button
+                type="button"
+                class="btn btn-outline-light outlineBtn mr-3 mr-lg-5 mb-2"
+              >
+                Download Now
+              </button>
+              <button type="button" class="btn btn-outline-light outlineBtn mb-2">
+                <i class="far fa-play-circle pr-2"></i>Watch Demo
+              </button>
+            </div>
+          </div>
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide col-12 d-none d-lg-block"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+            </ol>
+            <div class="carousel-inner bannerCarousel">
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3">
+                      <img
+                        class="d-block w-100"
+                        src="./img/slider1.png"
+                        alt="First slide"
+                      />
+                    </div>
+                    <div class="col-9">
+                      <div class="carousel-caption text-left">
+                        <h1>
+                          An iphone Music Player that offers a virtual sound Experience!
+                        </h1>
+                        <h2>
+                          Boom for iOS transforms the way you listen to your downloaded music on an iPhone or
+iPad. With incredible features like 3D Surround Sound, Handcrafted Equalizer Presets and
+Audio Intensity Slider, you are guaranteed a high quality music experience on any
+headphones!
+                        </h2>
+                        <div class="buttonWrap flex flex-wrap mt-5">
+                          <button
+                            type="button"
+                            class="btn btn-outline-light outlineBtn mr-3 mr-lg-5 mb-2"
+                          >
+                            Download Now
+                          </button>
+                          <button type="button" class="btn btn-outline-light outlineBtn mb-2">
+                            <i class="far fa-play-circle pr-2"></i>Watch Demo
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3">
+                      <img
+                        class="d-block w-100"
+                        src="./img/slider2.png"
+                        alt="First slide"
+                      />
+                    </div>
+                    <div class="col-9">
+                      <div class="carousel-caption text-left">
+                        <h1>
+                          An iphone Music Player that offers a virtual sound Experience!
+                        </h1>
+                        <h2>
+                          Boom for iOS transforms the way you listen to your downloaded music on an iPhone or
+iPad. With incredible features like 3D Surround Sound, Handcrafted Equalizer Presets and
+Audio Intensity Slider, you are guaranteed a high quality music experience on any
+headphones!
+                        </h2>
+                        <div class="buttonWrap flex flex-wrap mt-5">
+                          <button
+                            type="button"
+                            class="btn btn-outline-light outlineBtn mr-3 mr-lg-5 mb-2"
+                          >
+                            Download Now
+                          </button>
+                          <button type="button" class="btn btn-outline-light outlineBtn mb-2">
+                            <i class="far fa-play-circle pr-2"></i>Watch Demo
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3">
+                      <img
+                        class="d-block w-100"
+                        src="./img/slider3.png"
+                        alt="First slide"
+                      />
+                    </div>
+                    <div class="col-9">
+                      <div class="carousel-caption text-left">
+                        <h1>
+                          An iphone Music Player that offers a virtual sound Experience!
+                        </h1>
+                        <h2>
+                          Boom for iOS transforms the way you listen to your downloaded music on an iPhone or
+iPad. With incredible features like 3D Surround Sound, Handcrafted Equalizer Presets and
+Audio Intensity Slider, you are guaranteed a high quality music experience on any
+headphones!
+                        </h2>
+                        <div class="buttonWrap flex flex-wrap mt-5">
+                          <button
+                            type="button"
+                            class="btn btn-outline-light outlineBtn mr-3 mr-lg-5 mb-2"
+                          >
+                            Download Now
+                          </button>
+                          <button type="button" class="btn btn-outline-light outlineBtn mb-2">
+                            <i class="far fa-play-circle pr-2"></i>Watch Demo
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="mainContent">
+      <div class="container siteContainer">
+        <div class="rowWrapper pt-20 pb-40">
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <img
+                  class="card-img-top w-100p mx-auto"
+                  src="./img/screen-recording.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center">Screen Recorder</h5>
+                  <p class="card-text text-center text-lg-left">
+                    Capture your screen in all its high- definition glory along
+                    with clear audio! By doing so at a smooth 60 FPS, you get
+                    sharp and clear recordings that look great on any device.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <img
+                  class="card-img-top w-100p mx-auto"
+                  src="./img/video-recording-icon.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center">Video Recorder</h5>
+                  <p class="card-text text-center text-lg-left">
+                    Make professional tutorial videos, amazing reaction videos
+                    and informative how-to videos with the new video recording
+                    feature of Capto. You may also use external recording
+                    devices for added flexibility.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <img
+                  class="card-img-top w-100p mx-auto"
+                  src="./img/video-editing.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center">Video Editor</h5>
+                  <p class="card-text text-center text-lg-left">
+                    Make your screen recordings look professional. Capto's
+                    powerful video editing suite gives you all the tools
+                    necessary to perfect your screen recordings, post-capture.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-40p">
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <img
+                  class="card-img-top w-100p mx-auto"
+                  src="./img/image-webcapture.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center">Screen & Web Capture</h5>
+                  <p class="card-text text-center text-lg-left">
+                    Capto's options allow for effortless capturing of
+                    screenshots in different ways. Capture fullscreen or just
+                    select parts as required. You can also save a whole webpage
+                    in one click!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <img
+                  class="card-img-top w-100p mx-auto"
+                  src="./img/image-editing.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center">Image Editor</h5>
+                  <p class="card-text text-center text-lg-left">
+                    Expand and build upon captured screenshots with Capto's
+                    image editing features. Annotate, correct, or adjust the
+                    properties of the image and make them informative and easy
+                    to comprehend.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <img
+                  class="card-img-top w-100p mx-auto"
+                  src="./img/dual-audio-icon.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center">Dual Audio Editor</h5>
+                  <p class="card-text text-center text-lg-left">
+                    Capto allows you to individually edit the audio coming from
+                    your system and from the microphone, thus adding impact and
+                    perfection to the quality of output.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="socialIconWrap">
+        <a href=""><img src="./img/facebook.png"  alt="Facebook"/></a>
+        <a href=""><img src="./img/twitter.png"  alt="twitter"/></a>
+      </div>
+    </section>
+
+    <footer class="footerWrap">
+      <div class="card text-center siteContainer footerContainer">
+        <div class="card-body">
+          <div class="footerBtns flex flex-wrap mb-3">
+            <a href="#" class="btn btn-primary rounded-30 px-30 py-10 mr-2 bluebtn">Learn More</a>
+          <a href="#" class="btn btn-primary rounded-30 px-30 py-10 bluebtn">Download Trial</a>
+          </div>
+          
+          <p class="card-text mb-3">With supporting text below as a natural lead-in to additional content.</p>
+          <img src="./img/mac-app-store.svg" />
+        </div>
+       
+      </div>
+      <div class="card text-center siteContainer footerContainer">
+        <div class="card-body">
+          <p class="card-text">Get tutorials, tips, tricks and how-to's for Capto via email :</p>
+          <form class="form-inline justify-content-center flex-nowrap flex-lg-wrap">
+            <input class="form-control" type="email" placeholder="Email Address">
+            <button type="submit" class="btn btn-primary my-1 mx-1">Sign Up</button>
+          </form>
+        </div>
+       
+      </div>
+      
+    </footer>
+    
+  </body>
+</html>
