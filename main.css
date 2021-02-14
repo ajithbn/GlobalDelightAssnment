@@ -1,0 +1,245 @@
+.siteContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/*Header styles start */
+.siteHeader {
+  background-color: #050832;
+}
+.siteLogo {
+  height: 40px;
+}
+.seperator {
+  border-bottom: 1px solid #ffffff80;
+}
+.siteHeader .navbar-light .navbar-toggler {
+  background-color: #fff;
+}
+/*Header styles End */
+/*Banner style start */
+.outlineBtn {
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.bannerCarouselWrap {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.mobBannerText h1 {
+  font-size: 24px;
+}
+.mobBannerText h2 {
+  font-size: 18px;
+}
+.videoBanner {
+  position: relative;
+  background-color: black;
+  height: 50vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+.videoBanner video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.videoBanner .container {
+  position: relative;
+  z-index: 2;
+}
+.videoBanner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+.carousel-indicators {
+  right: auto;
+  left: 11%;
+  margin: 0;
+  justify-content: start;
+  bottom: -15px;
+}
+.carousel-caption h1 {
+  font-size: 24px;
+}
+.carousel-caption h2 {
+  font-size: 18px;
+}
+/*Banner style End */
+/*Content style start*/
+.w-100p {
+  width: 100px;
+}
+.pt-40p {
+  padding-top: 40px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pb-40 {
+  padding-bottom: 40px;
+}
+.mainContent .card,
+.footerWrap .card {
+  border: none;
+  background-color: transparent;
+  border-radius: 0;
+  color: #fff;
+}
+.mainContent,
+.footerWrap {
+  background-color: #050832;
+}
+/*Content style End*/
+/* footer style start*/
+.rounded-30 {
+  border-radius: 30px;
+}
+.px-30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.footerContainer.card {
+  border-top: 1px solid #ffffff80;
+  border-bottom: 1px solid #ffffff80;
+}
+.socialIconWrap {
+  width: 40px;
+  left: 0;
+  top: 50%;
+  transform: translate(0px, -50%);
+  display: none;
+}
+.socialIconWrap.stick {
+  position: fixed;
+  z-index: 9999;
+  display: block;
+}
+.socialIconWrap img {
+  width: 40px;
+  margin-bottom: 5px;
+}
+.footerContainer .form-inline .form-control,
+.footerContainer .form-inline .btn {
+  border-radius: 0px;
+  border: none;
+}
+.footerBtns .bluebtn {
+  background-color: #1081e1;
+}
+/* footer style start*/
+@media (min-width: 992px) {
+  /*header start*/
+  .nav-item {
+    position: relative;
+  }
+  .nav-item:after {
+    position: absolute;
+    opacity: 0;
+    width: 0px;
+    height: 3px;
+    background-color: #fff;
+    content: "";
+    transition: all 0.3s ease-in-out;
+    bottom: -22px;
+  }
+  .nav-item:hover:after,
+  .nav-item.active:after {
+    opacity: 1;
+    left: 0;
+    bottom: -22px;
+    width: 100%;
+  }
+  .menu .nav-item {
+    padding: 0;
+    margin-right: 16px;
+  }
+  .menu .nav-item .nav-link {
+    padding: 0;
+  }
+  /*header End*/
+  /*banner start*/
+  .desktopBanner.videoBanner {
+    height: 75vh;
+  }
+  .bannerCarousel .carousel-caption h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .bannerCarousel .carousel-caption h2 {
+    font-size: 17px;
+    margin-bottom: 50px;
+    font-weight: 100;
+    line-height: 30px;
+  }
+  .outlineBtn {
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-image: linear-gradient(90deg, #1081e1 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: all 600ms ease-out;
+  }
+  .outlineBtn:hover {
+    background-position: 0;
+    color: #fff;
+  }
+  .btn-outline-light.outlineBtn:hover {
+    background-color: transparent;
+  }
+  .bannerCarousel .carousel-caption {
+    bottom: auto;
+    top: 20px;
+  }
+  /*banner End*/
+  /*main content start*/
+  .mainContent .card-body {
+    position: relative;
+    min-height: 250px;
+  }
+  .mainContent .card-body:after {
+    content: "";
+    position: absolute;
+    right: -15px;
+    width: 1px;
+    background-color: #ffffff80;
+    height: 60%;
+    bottom: 0;
+    top: 50%;
+    transform: translate(0px, -50%);
+  }
+  /*main content End*/
+  /*footer start*/
+
+  .footerContainer .form-inline .form-control {
+    min-width: 380px;
+  }
+  .footerBtns .bluebtn:hover {
+    opacity: 0.5;
+  }
+  /*footer End*/
+}
